@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.footer-all {
+    background-color: #F8E8EE; 
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #D4A5A5;
+    margin-left: -20px; 
+    margin-right: -20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #333; 
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 22px; 
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #A06565; 
+}
+
+.footer-info {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/body-image-trial-1.png')
+}
+header {
+    background: url('images/library-heading-trial-image-1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    margin: 0;
+    margin-top: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+.mainnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+.mainnav ul li {
+    margin: 0;
+}
+.mainnav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.mainnav ul li a:hover {
+    background-color: #575757;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.form-header {
+    font-family: 'Poppins', sans-serif; /* Corrected to only use Poppins */
+    font-size: 2em; /* Larger font size for visibility */
+    font-weight: 700; /* Bold for emphasis */
+    margin-top: 20px;
+    color: #333; /* Dark gray color for readability */
+    text-align: center; /* Center-align the header */
+}
+
+.submit-form {
+    font-family: 'Poppins', sans-serif; /* Uniform font family for the form */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #bdeaf5; /* Light gray background for form */
+    padding: 20px; /* Add some padding inside the form */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 70%; /* Limit the form width for better design */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-form input,
+.submit-form textarea {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 1px solid #f66e6e;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.submit-form input:focus,
+.submit-form textarea:focus {
+    border-color: #A06565; /* Soft pastel border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-form button {
+    background-color: #A06565; /* Subtle pastel button color */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-form button:hover {
+    background-color: #8E4D4D; /* Slightly darker color on hover */
+}
+
+.submit-form button:active {
+    background-color: #763C3C; /* Even darker when clicked */
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+legend {
+    font-weight: bold;
+}
+.contact-radio {
+    display: inline-block;
+    margin-right: 15px;
+}
+.contact-radio input {
+    margin-right: 5px;
+}

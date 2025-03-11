@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Public Library Membership Page</title>
+</head>
+<stylesheet>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</stylesheet>
+<body>
+    <header>
+        <h1>Melbourne Public Library</h1>
+        <p>Proudly opened since 1929</p>
+    </header>
+    <nav class="mainnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>  
+  
+    <div class="submit-form">
+      <article>
+        <h2 class="form-header">Membership Form</h2>
+        <form>
+            <article>
+                <fieldset>
+                    <legend>
+                        Enter Your Personal Information
+                    </legend>
+                    <table colspan="2">
+                        <tr>
+                            <th>First Name</th>
+                            <td><input type="text" title="First Name" placeholder="First Name" /></td>
+                            <th>Last Name</th>
+                            <td><input type="text" title="Last Name" placeholder="Last Name" /></td>
+                            <th>Email</th>
+                            <td><input type="email" title="Email" placeholder="Email" /></td>
+                            <th>Phone Number</th>
+                            <td><input type="tel" title="Phone Number" placeholder="Phone Number" /></td>
+                        </tr>                                            
+                        
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Enter Your Address Information
+                    </legend>
+                    <table>
+                        <tr>
+                            <th>Street Address</th>
+                            <td><input type="text" title="Enter your street address" placeholder="Street Address" /></td>
+                            <th>Suburb</th>
+                            <td><input type="text" title="Enter your suburb" placeholder="Suburb" /></td>  
+                            <th>Postcode</th>                           
+                            <td><input type="text" title="Enter your postcode" placeholder="Postcode" /></td>
+                        </tr>
+                       
+                    </table>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>
+                        Membership Information
+                    </legend>
+                    <table>
+                        <tr>
+                            <th>Enter Membership Type</th>
+                            <td>
+                                <select title="Select a membership type">
+                                    <option value="0">Choose Membership Type</option>
+                                    <option value="1">Adult</option>
+                                    <option value="2">Child</option>
+                                    <option value="3">Senior</option>
+                                    <option value="4">Student</option>
+                                </select>
+                            </td>
+                             <th>Enter Membership Duration</th>
+                            <td>
+                                <select title="Select a membership duration">
+                                    <option value="0">Choose Membership Duration</option>
+                                    <option value="1">1 Month</option>
+                                    <option value="2">3 Months</option>
+                                    <option value="3">6 Months</option>
+                                    <option value="4">12 Months</option>
+                                </select>
+                            </td>
+                        </tr>
+                       
+                    </table>
+                </fieldset>
+         
+                    <fieldset>
+                        <legend>Would you like to receive updates?</legend>
+                        <label class="contact-radio"><input type="radio" name="contact1" value="yes" title="Yes" />Yes</label>
+                        
+                        <label class="contact-radio"><input type="radio" name="contact1" value="no" title="No" />No</label>
+                        <tr>
+                            <th>Preferred Genre</th>
+                            <td>
+                                <select title="Select a suburb">
+                                    <option value="0">Choose Genre</option>
+                                    <option value="1">Literary Fiction</option>
+                                    <option value="2">Historical Fiction</option>
+                                    <option value="3">Science Fiction</option>
+                                    <option value="4">Fantasy</option>
+                                    <option value="5">Mystery</option>
+                                    <option value="6">Thriller</option>
+                                    <option value="7">Romance</option>
+                                    <option value="8">Biography</option>
+                                    <option value="9">Autobiography</option>
+                                    <option value="10">Self-Help</option>           
+                          
+                                </select>
+                            </td>
+                        </tr>
+                      </table>
+                      
+                    </fieldset>
+                    <fieldset>
+                        
+                    </fieldset>
+                    
+                    <tr>
+                        <td>
+                            <label><input type="submit" value="Apply" /> Submit</label>
+                        </td>
+                        <td>
+                            <label><input type="reset" value="Cancel" /> Reset</label>
+                        </td>
+                    </tr>
+                    
+                    
+                        
+                     </article>
+              </form>
+      </article>
+      
+    </div>
+  </body>
+  <footer class="footer-all">
+    <p>Melbourne Public Library<br>Melbourne, Victoria<br>1300 000 000</p>
+    
+    <div class="footer-links">
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" title="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="https://www.google.com" target="_blank" rel="noopener" title="Google"><i class="fab fa-google"></i></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Suggestions"><i class="fas fa-lightbulb"></i></a> 
+    </div>
+    
+    <div class="footer-info">
+        © 2025 Melbourne Public Library. All rights reserved.
+    </div>
+</footer>
+</html>
