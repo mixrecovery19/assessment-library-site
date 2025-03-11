@@ -1,6 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.footer-all {
+    margin-top: auto; /* This ensures the footer stays at the bottom of the page */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
+/* Style for footer links */
+.footer-links a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Footer info styling */
+.footer-info {
+    margin-top: 10px;
+    font-size: 12px;
+}
 .footer-all {
     background-color: #F8E8EE; 
     color: #000;
@@ -11,6 +33,7 @@
     border-top: 4px solid #D4A5A5;
     margin-left: -20px; 
     margin-right: -20px;
+    margin-bottom: -20px;
 }
 
 .footer-links {
@@ -34,8 +57,16 @@
     margin-top: 10px;
     opacity: 0.8;
 }
+html, body {
+    height: 100%; /* Full height of the viewport */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
 
 body {
+    flex: 1; /* Allow body to expand */
     font-family: Arial, sans-serif;
     background: url('images/body-image-trial-1.png')
 }
@@ -80,7 +111,6 @@ header p {
 .mainnav ul li a:hover {
     background-color: #575757;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .form-header {
     font-family: 'Poppins', sans-serif; /* Corrected to only use Poppins */
@@ -155,4 +185,16 @@ legend {
 }
 .contact-radio input {
     margin-right: 5px;
+}
+.catalogue-search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #bdeaf5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
