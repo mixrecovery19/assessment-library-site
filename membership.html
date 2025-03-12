@@ -65,7 +65,7 @@
                     </table>
                 </fieldset>            
                 
-                <fieldset>
+                <fieldset class="membership-info">
                     <legend>
                        Enter Your Desired Membership Information
                     </legend>
@@ -73,7 +73,7 @@
                         <tr>
                             <th>Select Membership Type</th>
                             <td>
-                                <select title="Select a membership type">
+                                <select class="membership-type" title="Select a membership type">
                                     <option value="0">Type</option>
                                     <option value="1">Adult</option>
                                     <option value="2">Child</option>
@@ -81,9 +81,9 @@
                                     <option value="4">Student</option>
                                 </select>
                             </td>
-                             <th>Select Membership Duration</th>
+                            <th>Select Membership Duration</th>
                             <td>
-                                <select title="Select a membership duration">
+                                <select class="membership-duration" title="Select a membership duration">
                                     <option value="0">Duration</option>
                                     <option value="1">1 Month</option>
                                     <option value="2">3 Months</option>
@@ -92,11 +92,11 @@
                                 </select>
                             </td>
                         </tr>
-                       
                     </table>
                 </fieldset>
+                
          
-                    <fieldset class="updates-genre">
+                    <fieldset class="membership-genre">
                         <legend>Would you like to receive updates?</legend>
                         <label class="contact-radio"><input type="radio" name="contact1" value="yes" title="Yes" />Yes</label>
                         
@@ -104,7 +104,7 @@
                         <tr>
                             <th>Preferred Genre</th>
                             <td>
-                                <select title="Select a suburb">
+                                <select class="membership-genre-select" title="Select a suburb">
                                     <option value="0">Choose Genre</option>
                                     <option value="1">Literary Fiction</option>
                                     <option value="2">Historical Fiction</option>
@@ -118,23 +118,15 @@
                                     <option value="10">Self-Help</option>           
                           
                                 </select>
+                                <button type="submit" class="membership-button">Submit</button>
+                                <button type="reset" class="membership-button">Reset</button>
                             </td>
                         </tr>
                       </table>
                       
-                    </fieldset>
-                                       
-                    <tr>
-                        <td>
-                            <label><input type="submit" value="Apply" /> Submit</label>
-                        </td>
-                        <td>
-                            <label><input type="reset" value="Cancel" /> Reset</label>
-                        </td>
-                    </tr>
-                    
-                    
-                        
+                    </fieldset>                                     
+                                     
+                                                               
                      </article>
               </form>
       </article>

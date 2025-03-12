@@ -58,6 +58,8 @@ header {
     margin-left: -20px;
     color: white;
     text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
 header h1 {
@@ -96,17 +98,29 @@ header p {
 .mainnav ul li a:hover {
     background-color: #575757;
 }
-
-/* Form Styling */
-.form-header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+/* Specific Index Page Styling */
+#home-image {
     margin-top: 20px;
-    color: #333;
-    text-align: center;
+    margin-bottom: 20px;
+    background-color: #5ccfec;
+    padding: 20px;
+    border-radius: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     
+    margin: 0 auto;     
+    width: 450px;
+    height: 350px; 
+    display: block; 
 }
 
+/* Generic Form Styling */
+.form-header {
+    font-family: 'Poppins', sans-serif;     
+    font-weight: 700;
+    margin-top: 20px;
+    color: #080000;
+    text-align: left;
+}
+/*Membership Submission Form Styling */
 .submit-form {
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
@@ -150,13 +164,30 @@ header p {
     transition: background-color 0.3s ease;
 }
 
-.submit-form button:hover {
-    background-color: #8E4D4D;
+.membership-genre button.membership-button {
+    background-color: #4CAF50; 
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding inside the buttons */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin: 10px 5px; /* Add spacing between buttons */
 }
 
-.submit-form button:active {
-    background-color: #763C3C;
+.membership-genre button.membership-button:hover {
+    background-color: #41ec4a; /* Darker green when hovering */
 }
+
+.membership-genre button.membership-button[type="reset"] {
+    background-color: #3d04f7; /* Red background for reset */
+}
+
+.membership-genre button.membership-button[type="reset"]:hover {
+    background-color: #e53935; /* Darker red when hovering */
+}
+
 
 .submit-form select {
     font-family: 'Poppins', sans-serif;
@@ -190,6 +221,15 @@ legend {
 
 .contact-radio input {
     margin-right: 5px;
+}
+/*Membership Submission Selection Boxes Styling */
+select {
+    width: 200px; 
+    min-width: 150px; 
+    padding: 5px;
+}
+.membership-type, .membership-duration{
+    width: 200px; 
 }
 
 .catalogue-search {
@@ -225,15 +265,7 @@ legend {
         font-size: 2em;
     }
 
-    .mainnav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mainnav ul li a {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
+    
 
     .submit-form {
         width: 90%;
@@ -287,6 +319,7 @@ legend {
         width: 85%;
     }
 }
+/* Styles for About Us page */
 .aboutus-main {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -299,6 +332,16 @@ legend {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.about-us-image img {
+    width: 450px; 
+    height: 350px; 
+    float: right;    
+   
+}
+
+/* Styles for Contact Us page */
 .contact-main {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -310,4 +353,49 @@ legend {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+iframe {
+    float: right;
+    margin-right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+    .index-image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+        background-color: #bdeaf5;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Styles for the map iframe */
+.map {
+    width: 100%;
+    max-width: 600px;  
+    height: 450px;
+    border: 0;
+    margin: 0 auto;  
+    display: block;
+}
+
+/*Revisit the below contact form styling */
+.contact-methods {
+    list-style-type: none;  /* Remove default list styling */
+    padding: 0;
+}
+
+.contact-methods li {
+    padding: 10px 0;
+}
+
+/* Optional: Add some space below the heading */
+.contact-methods h3 {
+    margin-bottom: 20px;
 }
