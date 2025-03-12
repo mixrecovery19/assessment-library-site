@@ -1,29 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Footer Styling */
 .footer-all {
     margin-top: auto; /* This ensures the footer stays at the bottom of the page */
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Style for footer links */
-.footer-links a {
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-}
-
-/* Footer info styling */
-.footer-info {
-    margin-top: 10px;
-    font-size: 12px;
-}
-.footer-all {
     background-color: #F8E8EE; 
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -34,10 +13,6 @@
     margin-left: -20px; 
     margin-right: -20px;
     margin-bottom: -20px;
-}
-
-.footer-links {
-    margin-top: 10px;
 }
 
 .footer-links a {
@@ -57,6 +32,8 @@
     margin-top: 10px;
     opacity: 0.8;
 }
+
+/* HTML, Body & Layout */
 html, body {
     height: 100%; /* Full height of the viewport */
     margin: 0; /* Remove default margins */
@@ -64,12 +41,13 @@ html, body {
     flex-direction: column; /* Stack content vertically */
 }
 
-
 body {
     flex: 1; /* Allow body to expand */
     font-family: Arial, sans-serif;
-    background: url('images/body-image-trial-1.png')
+    background: url('images/body-image-trial-1.png');
 }
+
+/* Header Styling */
 header {
     background: url('images/library-heading-trial-image-1.jpg') no-repeat center center;
     background-size: cover;
@@ -81,14 +59,18 @@ header {
     color: white;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
 }
+
 header p {
     margin: 5px 0 0;
     font-size: 1.2em;
 }
+
+/* Main Navigation */
 .mainnav ul {
     list-style: none;
     padding: 0;
@@ -99,38 +81,42 @@ header p {
     justify-content: center;
     background-color: #333;
 }
+
 .mainnav ul li {
     margin: 0;
 }
+
 .mainnav ul li a {
     display: block;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
 }
+
 .mainnav ul li a:hover {
     background-color: #575757;
 }
 
+/* Form Styling */
 .form-header {
-    font-family: 'Poppins', sans-serif; /* Corrected to only use Poppins */
-    font-size: 2em; /* Larger font size for visibility */
-    font-weight: 700; /* Bold for emphasis */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
     margin-top: 20px;
-    color: #333; /* Dark gray color for readability */
-    text-align: center; /* Center-align the header */
+    color: #333;
+    text-align: center;
 }
 
 .submit-form {
-    font-family: 'Poppins', sans-serif; /* Uniform font family for the form */
+    font-family: 'Poppins', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #bdeaf5; /* Light gray background for form */
-    padding: 20px; /* Add some padding inside the form */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #bdeaf5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 70%; /* Limit the form width for better design */
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -148,12 +134,12 @@ header p {
 
 .submit-form input:focus,
 .submit-form textarea:focus {
-    border-color: #A06565; /* Soft pastel border on focus */
-    outline: none; /* Remove default outline */
+    border-color: #A06565;
+    outline: none;
 }
 
 .submit-form button {
-    background-color: #A06565; /* Subtle pastel button color */
+    background-color: #A06565;
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 12px 20px;
@@ -165,28 +151,155 @@ header p {
 }
 
 .submit-form button:hover {
-    background-color: #8E4D4D; /* Slightly darker color on hover */
+    background-color: #8E4D4D;
 }
 
 .submit-form button:active {
-    background-color: #763C3C; /* Even darker when clicked */
+    background-color: #763C3C;
 }
+
+.submit-form select {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 1px solid #f66e6e;
+    border-radius: 5px;
+    width: 75%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.submit-form select:focus {
+    border-color: #A06565;
+    outline: none;
+}
+
 fieldset {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px 0;
 }
+
 legend {
     font-weight: bold;
 }
+
 .contact-radio {
     display: inline-block;
     margin-right: 15px;
 }
+
 .contact-radio input {
     margin-right: 5px;
 }
+
 .catalogue-search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #bdeaf5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 600px) {
+    .footer-all {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .footer-info {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .mainnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainnav ul li a {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .submit-form {
+        width: 90%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .submit-form input,
+    .submit-form textarea,
+    .submit-form select {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .catalogue-search {
+        width: 90%;
+    }
+}
+
+/* Tablet and Larger Screens */
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    .footer-all {
+        padding: 18px 15px;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .mainnav ul {
+        flex-direction: row;
+    }
+
+    .submit-form {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    .submit-form input,
+    .submit-form textarea,
+    .submit-form select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .catalogue-search {
+        width: 85%;
+    }
+}
+.aboutus-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #bdeaf5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-main {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #bdeaf5;
