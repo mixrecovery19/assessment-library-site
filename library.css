@@ -3,7 +3,7 @@
 /* Footer Styling */
 .footer-all {
     margin-top: auto; /* This ensures the footer stays at the bottom of the page */
-    
+    position: relative; /* This allows the footer to be positioned absolutely */
     background-image: linear-gradient(315deg, #76bbec 0%, #F8E8EE 74%);
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -13,7 +13,12 @@
     border-top: 4px solid #D4A5A5;
     margin-left: -20px; 
     margin-right: -20px;
-    margin-bottom: -20px;
+    margin-bottom: -20px;     
+    width: 100%;
+    background-color: #bdeaf5; /* Adjust as needed */    
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+   
 }
 
 .footer-links a {
@@ -46,6 +51,7 @@ body {
     flex: 1; /* Allow body to expand */
     font-family: Arial, sans-serif;
     background: url('images/body-image-trial-1.png');
+    
 }
 
 /* Header Styling */
@@ -54,13 +60,15 @@ header {
     background-size: cover;
     padding: 40px;
     margin: 0;
-    margin-top: -20px;
+    margin-top: 0;
+   height: 50px;
     margin-right: -20px;
     margin-left: -20px;
     color: white;
     text-align: center;
-    position: relative;
+    position: fixed;
     z-index: 1000;
+    width: 100%;
 }
 
 header h1 {
@@ -83,6 +91,7 @@ header p {
     display: flex;
     justify-content: center;
     background-color: #333;
+    background-image: linear-gradient(315deg, #76bbec 0%, #F8E8EE 74%);
 }
 
 .mainnav ul li {
@@ -127,7 +136,7 @@ header p {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #bdeaf5;
-    padding: 20px;
+    padding: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -237,7 +246,7 @@ select {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #bdeaf5;
-    padding: 20px;
+    padding: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -282,6 +291,7 @@ select {
     }
 
     .catalogue-search {
+        
         width: 90%;
     }
 }
@@ -325,7 +335,7 @@ select {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #bdeaf5;
-    padding: 20px;
+    padding: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -347,7 +357,7 @@ select {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #bdeaf5;
-    padding: 20px;
+    padding: 125px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -365,7 +375,7 @@ iframe {
         margin-top: 20px;
         margin-bottom: 20px;
         background-color: #bdeaf5;
-        padding: 20px;
+        padding: 150px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 100%;
@@ -373,22 +383,34 @@ iframe {
         margin-left: auto;
         margin-right: auto;
         display: flex;  
+        flex-grow: 1;
         flex-direction: column; 
-        align-items: center; /* Center elements horizontally */
+        align-items: center;
         text-align: center;
     }
     
     .index-image img,
     .index-image iframe {
         background-color: #bdeaf5;
-        padding: 20px;
+        padding: 10px; /* Reduced padding for better alignment */
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 70%;
-        height: auto;
         margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+    .index-image img {
+        height: 250px; /* Slightly reduced height for uniformity */
+        object-fit: cover; /* Ensures the image fills the space properly */
+    }
+    
+    .index-image iframe {
+        height: 280px; /* Slightly increased height for better balance */
+    }
+    
     
 
 
