@@ -66,7 +66,7 @@ function selectBook(bookId) {
     alert("Error: Book not found.");
     return;
   }
-  
+  // otherwise display the selected book
   document.getElementById("book-title").textContent = selectedBook.title;
   document.getElementById("book-author").textContent = selectedBook.author;
   document.getElementById("book-year").textContent = selectedBook.year;
