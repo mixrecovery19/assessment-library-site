@@ -7,6 +7,7 @@
    <!-- CSS & Custom Texts Link--> 
     <link rel="stylesheet" href="library.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="contact.js"></script>
 </head>
 <body>
     <header>
@@ -59,11 +60,11 @@
                <table>  
                       <tr>        
                           <th>Enter Name</th>
-                          <td><input type="text" title="Enter your name" placeholder="Name" /></td>
+                          <td><input type="text" title="Enter your name" placeholder="Name" name="name" /></td>
                       </tr>
                       <tr>
                           <th>Enter Email</th>
-                          <td><input type="email" title="Enter your email" placeholder="Email" /></td>
+                          <td><input type="email" title="Enter your email" placeholder="Email" name="email" /></td>
                       </tr>
                       </table>
                     </fieldset>
@@ -71,7 +72,7 @@
                       <tr>
                           <th>Age Range</th>
                           <td>
-                              <select title="Select a suburb">
+                              <select title="Select Age Range" name="age">
                                 <option value="0">Choose Age Group</option>
                                   <option value="1">1 to 12</option>
                                   <option value="2">13 to 16</option>
@@ -95,7 +96,7 @@
                           <fieldset>
                           <tr>
                               <td>
-                                  <label><input type="submit" value="Send Out"/>Submt</label>
+                                  <label><input type="button" value="Send Out" onclick="signUpForm()"/>Submit</label>
                               </td>
                               <td>
                                   <label><input type="reset" value="Cancel"/>Reset</label>
@@ -135,7 +136,5 @@
             © 2025 Melbourne Public Library. All rights reserved.
         </div>
     </footer>
-<!-- JavaScript file -->
-    <script src="contact.js"></script>
 </body>
 </html>
