@@ -2,8 +2,8 @@
 
 /* Footer Styling */
 .footer-all {
-    margin-top: auto; /* This ensures the footer stays at the bottom of the page */
-    position: relative; /* This allows the footer to be positioned absolutely */
+    margin-top: auto;
+    position: relative; 
     background-image: linear-gradient(315deg, #76bbec 0%, #F8E8EE 74%);
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -15,7 +15,7 @@
     margin-right: -20px;
     margin-bottom: -20px;     
     width: 100%;
-    background-color: #bdeaf5; /* Adjust as needed */    
+    background-color: #bdeaf5; 
     text-align: center;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
    
@@ -41,14 +41,14 @@
 
 /* HTML, Body & Layout */
 html, body {
-    height: 100%; /* Full height of the viewport */
-    margin: 0; /* Remove default margins */
+    height: 100%; 
+    margin: 0; 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
 }
 
 body {
-    flex: 1; /* Allow body to expand */
+    flex: 1;
     font-family: Arial, sans-serif;
     background: url('images/body-image-trial-1.png');
     
@@ -117,7 +117,7 @@ header p {
     border-radius: 28px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     
     margin: 0 auto;     
-    width: 450px;
+    width: 400px;
     height: 350px; 
     display: block; 
 }
@@ -411,21 +411,21 @@ iframe {
     
     /* Styling for the introductory text */
     .intro-text.left::before {
-        content: attr(data-first-word) " "; /* Inserts the first word from the attribute */
-        font-size: 1.5em; /* Makes it larger */
-        font-weight: bold; /* Emphasizes it */
-        color: #0077cc; /* Changes color */
+        content: attr(data-first-word) " "; 
+        font-size: 1.5em;
+        font-weight: bold; 
+        color: #0077cc;
     }
     .intro-text.right::before {
-        content: attr(data-first-word) " "; /* Inserts the first word from the attribute */
-        font-size: 1.5em; /* Makes it larger */
-        font-weight: bold; /* Emphasizes it */
-        color: #0077cc; /* Changes color */
+        content: attr(data-first-word) " "; 
+        font-size: 1.5em; 
+        font-weight: bold; 
+        color: #0077cc; 
     }
     
     
     .intro-text {
-        width: 25%; /* Adjusted width for balance */
+        width: 25%; 
         font-size: 1.1rem;
         color: #333;
     }
@@ -441,13 +441,14 @@ iframe {
     /* Ensure the image is properly styled */
     .index-image img {
         background-color: #bdeaf5;
-        padding: 10px;
+        padding: 30px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 40%; /* Adjusted for proper sizing */
+        width: 30%; 
         max-width: 100%;
-        height: 250px; /* Maintains uniformity */
-        object-fit: cover; /* Ensures the image fills the space properly */
+        width: 250px;
+        height: 250px;
+        object-fit: cover; 
     }
     
     /* Styling for the video iframe */
@@ -456,9 +457,9 @@ iframe {
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 100%;
+        width: 90%;
         max-width: 70%;
-        height: 280px; /* Increased height for balance */
+        height: 280px; 
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -467,16 +468,16 @@ iframe {
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .intro-container {
-            flex-direction: column; /* Stacks elements vertically on smaller screens */
+            flex-direction: column; 
         }
     
         .intro-text {
-            width: 90%; /* Expands text width for readability */
+            width: 90%; 
             text-align: center;
         }
     
         .index-image img {
-            width: 80%; /* Adjust image size on smaller screens */
+            width: 80%; 
         }
     }
     
@@ -494,7 +495,7 @@ iframe {
 
 /*Revisit the below contact form styling */
 .contact-methods {
-    list-style-type: none;  /* Remove default list styling */
+    list-style-type: none;  
     padding: 0;
 }
 
