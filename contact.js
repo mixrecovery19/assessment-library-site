@@ -1,4 +1,4 @@
-// ***IF NEEDED, ADD CODE HERE***
+// function to handle the form submission, creating alert insead of inserting into the database.
 function signUpForm() {
     var form = document.querySelector("form");
 
