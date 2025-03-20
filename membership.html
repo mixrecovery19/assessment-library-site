@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melbourne Public Library Membership Page</title>
-</head>
-<stylesheet>
-    <link rel="stylesheet" href="library.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</stylesheet>
-<script src="library.js"></script>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melbourne Public Library Membership Page</title>
+        <link rel="stylesheet" href="library.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="membership.js" defer></script>
+    </head>
+    <body>
     <header>
         <h1>Melbourne Public Library</h1>
         <p>Proudly opened since 1929</p>
@@ -19,7 +17,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a hr ef="membership.html">Membership</a></li>
+                <li><a href="membership.html">Membership</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>  
@@ -38,13 +36,13 @@
                     <table colspan="2">
                         <tr>
                             <th>First Name</th>
-                            <td><input type="text" title="First Name" placeholder="First Name" /></td>
+                            <td><input type="text" title="First Name" placeholder="First Name" name="fname" /></td>
                             <th>Last Name</th>
-                            <td><input type="text" title="Last Name" placeholder="Last Name" /></td>
+                            <td><input type="text" title="Last Name" placeholder="Last Name" name="lname" /></td>
                             <th>Email</th>
-                            <td><input type="email" title="Email" placeholder="Email" /></td>
+                            <td><input type="email" title="Email" placeholder="Email" name="email" /></td>
                             <th>Phone Number</th>
-                            <td><input type="tel" title="Phone Number" placeholder="Phone Number" /></td>
+                            <td><input type="tel" title="Phone Number" placeholder="Phone Number" name="phone" /></td>
                         </tr>                                            
                         
                     </table>
@@ -56,11 +54,11 @@
                     <table>
                         <tr>
                             <th>Street Address</th>
-                            <td><input type="text" title="Enter your street address" placeholder="Street Address" /></td>
+                            <td><input type="text" title="Enter your street address" placeholder="Street Address" name="street"/></td>
                             <th>Suburb</th>
-                            <td><input type="text" title="Enter your suburb" placeholder="Suburb" /></td>  
+                            <td><input type="text" title="Enter your suburb" placeholder="Suburb" name="suburb"/></td>  
                             <th>Postcode</th>                           
-                            <td><input type="text" title="Enter your postcode" placeholder="Postcode" /></td>
+                            <td><input type="text" title="Enter your postcode" placeholder="Postcode" name="postcode"/></td>
                         </tr>
                        
                     </table>
@@ -74,7 +72,7 @@
                         <tr>
                             <th>Select Membership Type</th>
                             <td>
-                                <select class="membership-type" title="Select a membership type">
+                                <select class="membership-type" title="Select a membership type" name="type">
                                     <option value="0">Type</option>
                                     <option value="1">Adult</option>
                                     <option value="2">Child</option>
@@ -84,7 +82,7 @@
                             </td>
                             <th>Select Membership Duration</th>
                             <td>
-                                <select class="membership-duration" title="Select a membership duration">
+                                <select class="membership-duration" title="Select a membership duration" name="duration">
                                     <option value="0">Duration</option>
                                     <option value="1">1 Month</option>
                                     <option value="2">3 Months</option>
@@ -105,7 +103,7 @@
                         <tr>
                             <th>Preferred Genre</th>
                             <td>
-                                <select class="membership-genre-select" title="Select a suburb">
+                                <select class="membership-genre-select" title="Select a suburb" name="genre">
                                     <option value="0">Choose Genre</option>
                                     <option value="1">Literary Fiction</option>
                                     <option value="2">Historical Fiction</option>
@@ -119,8 +117,9 @@
                                     <option value="10">Self-Help</option>           
                           
                                 </select>
-                                <button type="submit" class="membership-button">Submit</button>
+                                <button type="button" class="membership-button" onclick="submitForm()">Submit</button>
                                 <button type="reset" class="membership-button">Reset</button>
+                               
                             </td>
                         </tr>
                       </table>
