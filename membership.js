@@ -26,3 +26,14 @@ Genre: ${details.genre}`;
 
     alert(message);
 }
+
+$(document).ready(function() {
+    // Initially hide the form
+    $(".submit-form form").hide();
+
+    // Toggle the form when header is clicked
+    $(".form-header").click(function() {
+        $(this).next("form").slideToggle("fast"); // slideToggle gives a dropdown effect
+    });
+});
+

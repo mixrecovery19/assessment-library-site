@@ -507,3 +507,11 @@ iframe {
 .contact-methods h3 {
     margin-bottom: 20px;
 }
+.links {
+    color: #ed29e0; 
+    text-decoration: none;      
+    transition: color 0.3s ease-in-out;
+}
+.links:hover {
+    color: #3cf76e; 
+}

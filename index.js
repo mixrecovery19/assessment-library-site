@@ -7,3 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
         iframe.setAttribute('loading', 'lazy');
     }
 });
+
+function mOverImage(img) {
+    img.src = "images/student-at-work-1.jpg";
+}
+
+function mOutImage(img) {
+    img.src = "images/studying.jpg";
+}
